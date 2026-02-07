@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    margin: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #1e3a8a;
+}
+
+header h2 {
+    margin-top: 5px;
+    color: #3b82f6;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.02);
+}
+
+/* Imagen */
+.tarjeta img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Video */
+video {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Texto */
+.descripcion {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #dbeafe;
+    margin-top: 20px;
+}
