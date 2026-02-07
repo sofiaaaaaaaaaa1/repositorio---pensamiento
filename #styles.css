@@ -1,51 +1,82 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f2f8ff;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-/* Encabezado */
-header {
-    background-color: #cfe8ff;
-    text-align: center;
-    padding: 30px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+body{
+    background:#f4f8ff;
 }
 
-header h1 {
-    margin: 0;
-    color: #1d4e89;
+/* HEADER */
+
+.header{
+    background:#dbeeff;
+    text-align:center;
+    padding:40px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
-header h2 {
-    margin-top: 10px;
-    color: #3a6ea5;
+.header h1{
+    color:#2c5aa0;
 }
 
-/* Contenedor */
-.contenedor-tareas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px;
+.header p{
+    color:#4a7ac7;
+    margin-top:10px;
 }
 
-/* Tarjetas */
-.tarjeta {
-    background: white;
-    border-radius: 15px;
-    padding: 25px;
-    text-decoration: none;
-    color: black;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
+/* TABLERO */
+
+.tablero{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:40px;
 }
 
-.tarjeta:hover {
-    transform: scale(1.05);
-    background-color: #e6f2ff;
+/* TARJETAS */
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    text-decoration:none;
+    color:black;
+    transition:.3s;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
 }
 
-.tarjeta h3 {
-    color: #1d4e89;
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Imagen */
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* Info */
+
+.card-info{
+    padding:20px;
+}
+
+.card-info h3{
+    color:#2c5aa0;
+    margin-bottom:10px;
+}
+
+/* Tag */
+
+.tag{
+    background:#cfe6ff;
+    color:#2c5aa0;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
 }

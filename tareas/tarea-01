@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Tarea 1</title>
-    <link rel="stylesheet" href="../styles.css">
+<meta charset="UTF-8">
+<title>Tarea 1</title>
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Tarea 1</h1>
+<header class="header">
+<h1>Tarea 1</h1>
 </header>
 
-<main style="padding:40px;">
+<section style="padding:40px;">
 
-    <h2>Descripción</h2>
-    <p>Aquí escribes la explicación de tu tarea.</p>
+<h2>Descripción</h2>
+<p>Aquí explicas tu tarea.</p>
 
-    <h2>Materiales</h2>
-    <ul>
-        <li>Material 1</li>
-        <li>Material 2</li>
-    </ul>
+<h2>Materiales</h2>
+<ul>
+<li>Material 1</li>
+<li>Material 2</li>
+</ul>
 
-    <h2>Imágenes</h2>
-    <img src="../img/ejemplo.jpg" width="300">
+<h2>Galería</h2>
+<img src="../img/tarea1.jpg" width="400">
 
-    <h2>Video</h2>
-    <video controls width="400">
-        <source src="../videos/video.mp4" type="video/mp4">
-    </video>
+<h2>Video</h2>
+<video controls width="400">
+<source src="../videos/video1.mp4">
+</video>
 
-    <h2>Referencias</h2>
-    <ul>
-        <li>www.ejemplo.com</li>
-    </ul>
+<h2>Referencias</h2>
+<ul>
+<li>Referencia 1</li>
+</ul>
 
-</main>
+</section>
 
 </body>
 </html>
