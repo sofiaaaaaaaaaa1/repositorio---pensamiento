@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Tarea 1</title>
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
 
-<header class="header">
+<header>
     <h1>Tarea 1</h1>
-    <a href="../index.html" class="boton">← Volver</a>
 </header>
 
-<section class="contenido">
+<main style="padding:40px;">
 
     <h2>Descripción</h2>
-    <p>
-        Aquí escribes toda la explicación de la tarea.
-    </p>
+    <p>Aquí escribes la explicación de tu tarea.</p>
 
     <h2>Materiales</h2>
     <ul>
@@ -26,23 +23,20 @@
         <li>Material 2</li>
     </ul>
 
-    <h2>Galería</h2>
-    <div class="galeria">
-        <img src="../img/tarea1/img1.jpg">
-        <img src="../img/tarea1/img2.jpg">
-    </div>
+    <h2>Imágenes</h2>
+    <img src="../img/ejemplo.jpg" width="300">
 
     <h2>Video</h2>
-    <video controls>
-        <source src="../videos/tarea1.mp4" type="video/mp4">
+    <video controls width="400">
+        <source src="../videos/video.mp4" type="video/mp4">
     </video>
 
     <h2>Referencias</h2>
     <ul>
-        <li><a href="#">Referencia</a></li>
+        <li>www.ejemplo.com</li>
     </ul>
 
-</section>
+</main>
 
 </body>
 </html>
