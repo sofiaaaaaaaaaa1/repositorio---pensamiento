@@ -1,95 +1,40 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    background: linear-gradient(to bottom, #eaf4ff, #f7fbff);
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color:#eaf4ff;
 }
 
-/* Header */
-
-.header {
-    background: #cfe8ff;
-    padding: 30px;
-    text-align: center;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* Encabezado */
+header{
+    background-color:#bfe3ff;
+    text-align:center;
+    padding:30px;
+    color:#0b3c6d;
 }
 
-.header h1 {
-    margin: 0;
-    color: #0f4c81;
+/* Contenedor de tareas */
+.contenedor{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    gap:25px;
+    padding:40px;
 }
 
-/* Grid principal */
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    padding: 40px;
-    gap: 30px;
+/* Cuadritos de tareas */
+.tarea{
+    background:linear-gradient(145deg,#d6efff,#9fd4ff);
+    padding:60px 20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    color:#083b66;
+    border-radius:20px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
-/* Tarjetas */
-
-.card {
-    background: white;
-    border-radius: 20px;
-    padding: 15px;
-    text-decoration: none;
-    color: black;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-/* Contenido tarea */
-
-.contenido {
-    padding: 40px;
-}
-
-.contenido h2 {
-    color: #1c6cb3;
-}
-
-/* Galería */
-
-.galeria {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.galeria img {
-    width: 250px;
-    border-radius: 15px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-/* Video */
-
-video {
-    width: 400px;
-    margin-top: 15px;
-    border-radius: 15px;
-}
-
-/* Botón volver */
-
-.boton {
-    display: inline-block;
-    margin-top: 10px;
-    background: #74b9ff;
-    padding: 10px 20px;
-    border-radius: 15px;
-    color: white;
-    text-decoration: none;
+/* Animación */
+.tarea:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
