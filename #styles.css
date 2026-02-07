@@ -1,68 +1,95 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f8fb;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
+    background: linear-gradient(to bottom, #eaf4ff, #f7fbff);
 }
 
-/* Encabezado */
-header {
-    background-color: #dbeafe;
+/* Header */
+
+.header {
+    background: #cfe8ff;
+    padding: 30px;
     text-align: center;
-    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-header h1 {
+.header h1 {
     margin: 0;
-    color: #1e3a8a;
+    color: #0f4c81;
 }
 
-header h2 {
-    margin-top: 5px;
-    color: #3b82f6;
-}
+/* Grid principal */
 
-/* Contenedor principal */
-.contenedor {
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 20px;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding: 40px;
+    gap: 30px;
 }
 
 /* Tarjetas */
-.tarjeta {
-    background-color: white;
-    border-radius: 12px;
+
+.card {
+    background: white;
+    border-radius: 20px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
-.tarjeta:hover {
-    transform: scale(1.02);
+.card:hover {
+    transform: translateY(-5px);
 }
 
-/* Imagen */
-.tarjeta img {
+.card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
+}
+
+/* Contenido tarea */
+
+.contenido {
+    padding: 40px;
+}
+
+.contenido h2 {
+    color: #1c6cb3;
+}
+
+/* Galería */
+
+.galeria {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 /* Video */
+
 video {
-    width: 100%;
+    width: 400px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+/* Botón volver */
+
+.boton {
+    display: inline-block;
     margin-top: 10px;
-}
-
-/* Texto */
-.descripcion {
-    margin: 10px 0;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #dbeafe;
-    margin-top: 20px;
+    background: #74b9ff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
 }
