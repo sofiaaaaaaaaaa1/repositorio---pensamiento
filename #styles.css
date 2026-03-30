@@ -1,82 +1,114 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+    text-align: center;
+
+    animation: fadeIn 0.8s ease-in;
 }
 
-body{
-    background:#f4f8ff;
+/* Animación al cargar */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
 }
 
-/* HEADER */
-
-.header{
-    background:#dbeeff;
-    text-align:center;
-    padding:40px;
-    box-shadow:0 3px 8px rgba(0,0,0,0.08);
+header {
+    padding: 40px 0;
 }
 
-.header h1{
-    color:#2c5aa0;
+h1 {
+    font-size: 40px;
 }
 
-.header p{
-    color:#4a7ac7;
-    margin-top:10px;
+/* Subtítulos */
+h2{
+    margin-top:30px;
+    color:#ccc;
+    font-size:22px;
 }
 
-/* TABLERO */
-
-.tablero{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-    padding:40px;
+/* Texto */
+p{
+    width:60%;
+    margin:10px auto;
+    line-height:1.6;
+    color:#ddd;
 }
 
-/* TARJETAS */
+/* Listas */
+ul{
+    width:60%;
+    margin:15px auto;
+    text-align:left;
+}
 
-.card{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
+li{
+    margin:6px 0;
+}
+
+/* Contenedor de tarjetas */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Tarjetas */
+.card {
+    background: linear-gradient(145deg, #1c1c1c, #111);
+    padding: 60px 0;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255,255,255,0.1);
+}
+
+/* Imágenes */
+img{
+    margin-top:30px;
+    width:400px;
+    border-radius:10px;
+    border:2px solid #444;
+    transition:0.3s;
+}
+
+img:hover{
+    transform: scale(1.03);
+}
+
+/* Botones / links */
+a{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#222;
+    border-radius:10px;
     text-decoration:none;
-    color:black;
-    transition:.3s;
-    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    color:white;
+    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-8px);
-}
-
-/* Imagen */
-
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
-}
-
-/* Info */
-
-.card-info{
-    padding:20px;
-}
-
-.card-info h3{
-    color:#2c5aa0;
-    margin-bottom:10px;
-}
-
-/* Tag */
-
-.tag{
-    background:#cfe6ff;
-    color:#2c5aa0;
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:13px;
+a:hover{
+    background:#444;
 }
